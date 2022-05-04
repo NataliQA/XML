@@ -1,1 +1,31 @@
-
+<?xml version="1.0" encodfing="UTF-8"?>
+		<Bug_report>
+			<ID>BR6</ID>
+			<Modul>Apple</Modul>
+			<Summury>Missing link to 'iPod' in Apple section when viewing section content</Summury>
+			<Steps_to_reproduce>
+				<Step>1.Open https://tehnoezh.ua/ru/</Step>
+				<Step>2. Click on 'Apple'</Step>
+				<Step>3. Bug-Missing link to 'iPod' in Apple section when viewing section content</Step>
+			</Steps_to_reproduce>
+			<Expected_result>
+				<ExResult>The site opens and works</ExResult>
+				<ExResult>Apple section implemented</ExResult>
+				<ExResult>All product links are present</ExResult>
+			</Expected_result>
+			<Actual_result>
+				<ActResult>The site opens and works</ActResult>
+				<ActResult>Apple section implemented</ActResult>
+				<ActResult>Missing link to 'Pod'</ActResult>
+			</Actual_result>
+			<Enviroment>
+				<Browser>Google Chrome v 89.0.4389.90</Browser>
+				<Browser>Mozilla Firefox  v 87.0</Browser>
+				<Browser>Microsoft Edge v 89.0.774.63</Browser>
+				<Browser>Opera v 75.0.3969.93</Browser>
+			</Enviroment>
+			<Severity>Minor</Severity>
+			<Priority>Low</Priority>
+			<Assigned_to>John Doe<.Assigned_to>
+			<Attachment>https://drive.google.com/file/d/1nuSfL033trPDobLw8vC4-0llIiJjwemL/view?usp=sharing</Attachment>
+		</Bug_report>
