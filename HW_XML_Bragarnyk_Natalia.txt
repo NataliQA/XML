@@ -1,0 +1,125 @@
+XML
+ 21. Создать внешний репозиторий c названием XML.
+			click New => name XML => Create repository
+ 22. Клонировать репозиторий XML на локальный компьютер.
+			git clone git@github.com:NataliQA/XML.git
+ 23. Внутри локального XML создать файл “new.xml”.
+			cd XML		touch new.xml
+ 24. Добавить файл под гит.
+			git add new.xml
+ 25. Закоммитить файл.
+			git commit -m "Create file new.xml"
+ 26. Отправить файл на внешний GitHub репозиторий.
+			git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе
+ (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). 
+ Всё написать в формате XML.
+			vin new.xml
+	<?xml version="1.0" encodfing="UTF-8"?>
+		<AboutMe>
+			<Fullname>Bragarnyk Natalia</Fullname>
+			<Age>35</Age>
+			<Number_of_pets>1</Number_of_pets>
+			<Future_desired_salary>500</Future_desired_salary>
+		<AboutMe>
+ 28. Отправить изменения на внешний репозиторий.
+			git commit -am "modify"
+			git push
+ 29. Создать файл preferences.xml
+			vim preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях 
+ (Любимый фильм, любимый сериал, любимая еда, любимое время года, 
+ сторона которую хотели бы посетить) в формате XML.
+	<?xml version="1.0" encodfing="UTF-8"?>
+		<preferences>
+			<Favorite_movie>August Rush</Favorite_movie>
+			<Favorite_series>Friends</Favorite_series>
+			<Favorite_food>Borsch</Favorite_food>
+			<Favorite_season>Spring</Favorite_season>
+			<Side_you_would_like_to_visit>Slovenia</Side_you_would_like_to_visit>
+		</preferences>
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут 
+ изучены на курсе в формате XML
+			vim skills.xml
+	<?xml version="1.0" encodfing="UTF-8"?>
+	<skills>
+		<Testing_theory>
+			<theory>What is testing</theory>
+			<theory>test documentation</theory>
+			<theory>types, testing methods</theory>
+			<theory>SDLC, STLC</theory>
+		</Testing_theory>
+		<API_testing>
+			<API>Postman</API>
+			<API>JSON</API>
+			<API>XML</API>
+			<API>JavaScript</API>
+			<API>"Autotest API</API>
+		</API_testing>
+        <Web_testing>
+			<Web>Charles</Web>
+			<Web>Fiddler</Web>
+			<Web>Dev Tools</Web>
+			<Web>VPN</Web>
+		</Web_testing>
+        <Mobile_testing>
+			<Mobile>iOS and Android guidelines</Mobile>
+			<Mobile>Android Studio</Mobile>
+			<Mobile>ADB</Mobile>
+			<Mobile>Sniffing of mobile traffic</Mobile>
+        </Mobile_testing>
+		<Git_Bash>Copying, creating, viewing, moving files on servers without a graphical interface</Git_Bash>
+		<SQL>Create, Delete, Drop, Insert Into, Select, From, Where, Join</SQL>
+        <Programming_language>
+			<Lang>Python</Lang>
+			<Lang>JavaScript</Lang>
+		</Programming_language>
+	</skills>
+ 32. Сделать коммит в одну строку.
+			git add .
+			git commit -m "add 2 new files"
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+			git push
+ 34. На веб интерфейсе создать файл bug_report.xml.
+			Add file => Create new file => Enter name bug_report.xml
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+			Commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, 
+ добавить баг репорт в формате XML.
+			click on bug_report.xml and click Edit this file. Print
+	<?xml version="1.0" encodfing="UTF-8"?>
+		<Bug_report>
+			<ID>BR6</ID>
+			<Modul>Apple</Modul>
+			<Summury>Missing link to 'iPod' in Apple section when viewing section content</Summury>
+			<Steps_to_reproduce>
+				<Step>1.Open https://tehnoezh.ua/ru/</Step>
+				<Step>2. Click on 'Apple'</Step>
+				<Step>3. Bug-Missing link to 'iPod' in Apple section when viewing section content</Step>
+			</Steps_to_reproduce>
+			<Expected_result>
+				<ExResult>The site opens and works</ExResult>
+				<ExResult>Apple section implemented</ExResult>
+				<ExResult>All product links are present</ExResult>
+			</Expected_result>
+			<Actual_result>
+				<ActResult>The site opens and works</ActResult>
+				<ActResult>Apple section implemented</ActResult>
+				<ActResult>Missing link to 'Pod'</ActResult>
+			</Actual_result>
+			<Enviroment>
+				<Browser>Google Chrome v 89.0.4389.90</Browser>
+				<Browser>Mozilla Firefox  v 87.0</Browser>
+				<Browser>Microsoft Edge v 89.0.774.63</Browser>
+				<Browser>Opera v 75.0.3969.93</Browser>
+			</Enviroment>
+			<Severity>Minor</Severity>
+			<Priority>Low</Priority>
+			<Assigned_to>John Doe<.Assigned_to>
+			<Attachment>https://drive.google.com/file/d/1nuSfL033trPDobLw8vC4-0llIiJjwemL/view?usp=sharing</Attachment>
+		</Bug_report>
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+			Commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML
+			git fetch
+			git pull
